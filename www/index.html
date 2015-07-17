@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
+        <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+        <script type="application/javascript" src="js/login.js"></script>
+    </head>
+
+    <body id="afui">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <header class="wrapping-col wrap-element uib_w_1" data-uib="app_framework/header" data-ver="2" id="af-header-7">
+            <h1>LOGIN</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_6 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-0"><a class="button backButton">Back</a>
+            <h1>REGISTRATE</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_11 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-1"><a class="button backButton">Back</a>
+            <h1></h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_12 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-2"><a class="button backButton">Back</a>
+            <h1></h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_19 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-3"><a class="button backButton">Back</a>
+            <h1>BIENVENIDO</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_22 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-4"><a class="button backButton">Back</a>
+            <h1>LAGUNA PACUCHA</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_23 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-5"><a class="button backButton">Back</a>
+            <h1>SONDOR RAYMI</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_24 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-6"><a class="button backButton">Back</a>
+            <h1>BAÑOS TERMALES</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_25 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-8"><a class="button backButton">Back</a>
+            <h1>IGLESIA SAN PEDRO</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_26 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-9"><a class="button backButton">Back</a>
+            <h1>BOSQUE DE PIEDRAS</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_47 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-10"><a class="button backButton">Back</a>
+            <h1></h1>
+        </header>
+        <div class="uwrap" id="content">
+            <div class="upage panel vertical-col fondo" id="mainpage" data-header="af-header-7" data-footer="none">
+                <div class="table-thing with-label widget uib_w_2 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" for="idusuario">usuario</label>
+                    <input class="wide-control" placeholder="Placeholder Text" type="text" id="idusuario">
+                </div>
+                <div class="table-thing with-label widget uib_w_3 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" for="idcontrasena">contrasena</label>
+
+                    <input class="wide-control" placeholder="Placeholder Text" type="text" id="idcontrasena">
+                </div><a class="button widget uib_w_4 d-margins icon user" data-uib="app_framework/button" data-ver="1" id="idingresar">INGRESAR</a><a class="button widget uib_w_5 d-margins icon right" data-uib="app_framework/button" data-ver="1" id="idregistrar">REGISTRAR</a>
+            </div>
+            <div class="upage vertical-col panel fondo" id="idpageRegistrar" data-header="af-header-0" data-footer="none">
+                <div class="table-thing with-label widget uib_w_7 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline">Nombres</label>
+                    <input class="wide-control" placeholder="Placeholder Text" type="text">
+                </div>
+                <div class="table-thing with-label widget uib_w_8 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline">Apellidos</label>
+                    <input class="wide-control" placeholder="Placeholder Text" type="text">
+                </div>
+                <div class="table-thing with-label widget uib_w_9 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline">Correo Electronico</label>
+                    <input class="wide-control" placeholder="Placeholder Text" type="text">
+                </div>
+                <a class="button widget uib_w_10 d-margins" data-uib="app_framework/button" data-ver="1" id="idsiguiente">SIGUIENTE</a>
+            </div>
+            <div class="upage vertical-col panel fondo" id="idpageBienvenido" data-header="af-header-3" data-footer="none">
+                <div class="widget uib_w_20 d-margins txt" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>Bienvenidos a esta nueva apliacion que le mostrara los lugares mas extrahordinarios de la ciudad de Andahuaylas - Apurimac.</p>
+                        <p>Usted podra conocer estos lugares tetalladamente grasias a esta aplicacion, no esperare mas :)</p>
+                    </div>
+                </div><a class="button widget uib_w_21 d-margins" data-uib="app_framework/button" data-ver="1" id="idcontinua">CONTINUA</a>
+            </div>
+
+            <div class="upage vertical-col panel fondo" id="idpageAndahuaylas" data-header="af-header-2" data-footer="none">
+
+                <div class="table-thing with-label widget uib_w_27 d-margins" data-uib="app_framework/radio_button_group" data-ver="1" data-child-name="af-group-0" id="idgrupo">
+
+                    <div class="wide-control">
+                        <div class="widget uib_w_28" data-uib="app_framework/radio_button" data-ver="1" id="idGrupoOpciones">
+                            <input type="radio" id="idLaguna" name="af-group-0">
+                            <label class="content-box" for="idLaguna">Laguna Pacuha</label>
+                        </div>
+                        <div class="widget uib_w_29" data-uib="app_framework/radio_button" data-ver="1">
+                            <input type="radio" id="idSondor" name="af-group-0">
+                            <label class="content-box" for="idSondor">Sondor Raymi</label>
+                        </div>
+                        <div class="widget uib_w_30" data-uib="app_framework/radio_button" data-ver="1">
+                            <input type="radio" id="idBosque" name="af-group-0">
+                            <label class="content-box" for="idBosque">Bosque de Piedras</label>
+                        </div>
+                        <div class="widget uib_w_31" data-uib="app_framework/radio_button" data-ver="1">
+                            <input type="radio" id="idBanos" name="af-group-0">
+                            <label class="content-box" for="idBanos">Baños termales</label>
+                        </div>
+                        <div class="widget uib_w_32" data-uib="app_framework/radio_button" data-ver="1">
+                            <input type="radio" id="idIglesia" name="af-group-0">
+                            <label class="content-box" for="idIglesia">Inglesia San Pedro</label>
+                        </div>
+                    </div>
+                </div>
+                <a class="button widget uib_w_33 d-margins" data-uib="app_framework/button" data-ver="1" id="siguiente1">SIGUIENTE</a>
+            </div>
+            <div class="upage vertical-col left panel" id="idpagePacucha" data-header="af-header-4" data-footer="none">
+                <div class="widget uib_w_34 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/pacucha2.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_35 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/pacucha1.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_37 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>La laguna de Pacucha" es considerada como una de las mas grandes y bellas lagunas del Perú. Esta laguna esta ubicada en el Distrito de Pacucha, la cual se encuentra a 16 kilometros de la provincia de Andahuaylas. tiene una esplicacion
+                            mitica de su orijen.</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col left panel" id="idpageSondor" data-header="af-header-5" data-footer="none">
+                <div class="widget uib_w_38 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/sondor.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_39 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/sondor1.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_40 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>El Sóndor Raymi, es la representación teatral festiva de los orígenes míticos de héroes locales como Usco Willka y otros jefes de etnias originarias, como Tomay Huaraka, Astro Huaraka y Anco Ayllu. Miles de pobladores, entre niños
+                            y ancianos, al borde de la laguna Pacucha, en Andahuaylas, dramatizan el origen de los chancas. La lucha de los líderes locales, la confederación interétnica, la emergencia de un solo mando, para enfrentar la presencia Inca,
+                            son los motivos centrales. La representación culmina en el complejo arqueológico de Sóndor, en medio del vuelo de cóndores, sacrificios de venados, discursos quechuas y alegorías de guerreros, sinchis. Los jefes tiene pieles
+                            de felinos y venados sobre sus cuerpos, para simbolizar el poder.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upage vertical-col panel" id="idpagePedro" data-header="af-header-8" data-footer="none">
+                <div class="widget uib_w_41 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/iglesia1.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_42 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/iglesia2.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_43 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>La iglesia de San Pedro de Andahuaylas esta ubicado en la palza mayor de anadahuaylas debe de haberse construido a finales del siglo XVI, Estuvo bajo la advocación de San Pedro, de alli viene el nombre de la iglesia aunque el altar
+                            principal lo preside la Virgen del Rosario. Consta de una sola nave con capillas laterales y sus anchas paredes son de barro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col panel" id="idpageBosque" data-header="af-header-9" data-footer="none">
+                <div class="widget uib_w_44 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/bosque1.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_45 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/bosque2.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_46 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col left panel" id="idpageBanos" data-header="af-header-10" data-footer="none">
+                <div class="widget uib_w_48 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/bano1.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="widget uib_w_49 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/bano2.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_50 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>hualalachi</p>
+                        <p>El encanto de las aguas de hualalachi. Desde un manantial brotan las aguas que conducen a los baños termales de hualalachi ubicado en el pueblo del mismo nombre, en el distrito de talavera en el departamento de Apurímac de la provincia
+                            de Andahuaylas</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
