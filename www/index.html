@@ -68,6 +68,9 @@
         -->
         <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
         <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+        <script src="js/marker.js"></script>
+        <script src="js/mapa.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
         <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
         <script type="application/javascript" src="js/login.js"></script>
@@ -110,6 +113,9 @@
         </header>
         <header class="wrapping-col wrap-element uib_w_47 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-10"><a class="button backButton">Back</a>
             <h1></h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_90 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-11"><a class="button backButton">Back</a>
+            <h1>UBICACION</h1>
         </header>
         <div class="uwrap" id="content">
             <div class="upage panel vertical-col fondo" id="mainpage" data-header="af-header-7" data-footer="none">
@@ -178,121 +184,310 @@
                 </div>
                 <a class="button widget uib_w_33 d-margins" data-uib="app_framework/button" data-ver="1" id="siguiente1">SIGUIENTE</a>
             </div>
-            <div class="upage vertical-col left panel" id="idpagePacucha" data-header="af-header-4" data-footer="none">
-                <div class="widget uib_w_34 scale-image d-margins" data-uib="media/img" data-ver="0">
+            <div class="upage vertical-col left panel fondo2" id="idpagePacucha" data-header="af-header-4" data-footer="none">
+
+                <div class="widget uib_w_51 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>LA LAGUNA DE PACUCHA </h5>
+                        <p>La Laguna de Pacucha es considerada como una de las más grandes y bellas lagunas del Perú. Su importancia radica en virtud a que su volumen y componentes nutritivos de sus aguas son productivos, además de ser tibias y casi dulces.</p>
+                        <p>Asimismo, en la actualidad se vienen explotando diferentes especies como la trucha, pejerrey lacustre, generando por consiguiente nuevas fuentes de alimentación y de trabajo en beneficio de los habitantes del lugar.</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_52 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/pacucha2.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_35 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <div class="widget uib_w_53 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>LEYENDA DE PACUCHA</h5>
+                        <p>En aquellos días, antes de esta laguna existía una hermosa ciudad considerada como el "paraíso celestial" debido a la belleza natural de sus paisajes, habitado por personas solidarias con principios humanistas y espirituales. Con
+                            el tiempo aparecieron personas de otros lugares, trayendo costumbres extrañas, formando una sociedad de corrupción, injusticia, maldad y cierto día se presentó un anciano pidiendo caridad en una casa donde se festejaba un matrimonio
+                            con gran pompa. Al verlo harapiento y sucio fue echado por la fuerza y con insultos. Al final de una calle el anciano es atendido por una humilde y modesta mujer campesina llamada "Mama Petecc" quien le brindó alimentación.
+                            En agradecimiento el anciano, le pide abandonar inmediatamente el lugar, llevando a su hijo y su cordero indicándole no voltear la mirada para atrás por ningún motivo. La mujer ya estando en la cumbre escucho truenos y relámpagos
+                            no pudo con su curiosidad y espantada al oír gritos y derrumbes volteó para ver lo que sucedía quedando petrificada tal como se le ve la estatua humana que esta frente a la leyenda.</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_54 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/pacucha1.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_37 d-margins" data-uib="media/text" data-ver="0">
+                <div class="widget uib_w_55 d-margins" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
-                        <p>La laguna de Pacucha" es considerada como una de las mas grandes y bellas lagunas del Perú. Esta laguna esta ubicada en el Distrito de Pacucha, la cual se encuentra a 16 kilometros de la provincia de Andahuaylas. tiene una esplicacion
-                            mitica de su orijen.</p>
-                        <p>&nbsp;</p>
+                        <h5> TEMPERATURA</h5>
+                        <p>La temperatura de la laguna tiene mínima de 15°C en los meses de junio y julio y máxima de 19°C en los meses de marzo y abril.</p>
                     </div>
                 </div>
+                <div class="widget uib_w_56 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>UBICACION</h5>
+                        <p>Se ubica en el distrito de Pacuha, Provincia Andahuaylas , Departamento Apurimac a 17 kilómetros de centro de la cuidad de Andahuaylas.</p>
+                    </div>
+                </div><a class="button widget uib_w_57 d-margins icon location" data-uib="app_framework/button" data-ver="1">Ver Mapa</a>
             </div>
-            <div class="upage vertical-col left panel" id="idpageSondor" data-header="af-header-5" data-footer="none">
-                <div class="widget uib_w_38 scale-image d-margins" data-uib="media/img" data-ver="0">
+            <div class="upage vertical-col left panel fondo2" id="idpageSondor" data-header="af-header-5" data-footer="none">
+
+                <div class="widget uib_w_58 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>COMPLEJO ARQUEOLOGICO DE SONDOR</h5>
+                        <p>El Sondor Raymi, también conocido con el nombre de Epopeya Chanka, es una celebración que se lleva a cabo dentro del distrito de Pacucha, en la provincia de Andahuaylas en el departamento y región de Apurímac, aunque más específicamente
+                            en el Complejo arqueológico de Sondor, en el templo del Muyu Muyu albergado en él.</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_59 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/sondor.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_39 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <div class="widget uib_w_60 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>REPRESENTACION</h5>
+                        <p>Se trata de una representación en la que se pretende reproducir en escena (una que recorre el complejo arqueológico mencionado) los orígenes míticos de los héroes Chankas de la zona, así como la batalla por la conquista y consolidación
+                            del pueblo Chanka en el área. Asimismo, la celebración del Sondor Raymi, forma parte de las actividades que se programan en conmemoración la ceremonia de aniversario de creación política de Andahuaylas y que en cada año, pretende,
+                            con esta representación, la captación de un amplio número de turistas.</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_61 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/sondor1.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_40 d-margins" data-uib="media/text" data-ver="0">
+                <div class="widget uib_w_62 d-margins" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
-                        <p>El Sóndor Raymi, es la representación teatral festiva de los orígenes míticos de héroes locales como Usco Willka y otros jefes de etnias originarias, como Tomay Huaraka, Astro Huaraka y Anco Ayllu. Miles de pobladores, entre niños
-                            y ancianos, al borde de la laguna Pacucha, en Andahuaylas, dramatizan el origen de los chancas. La lucha de los líderes locales, la confederación interétnica, la emergencia de un solo mando, para enfrentar la presencia Inca,
-                            son los motivos centrales. La representación culmina en el complejo arqueológico de Sóndor, en medio del vuelo de cóndores, sacrificios de venados, discursos quechuas y alegorías de guerreros, sinchis. Los jefes tiene pieles
-                            de felinos y venados sobre sus cuerpos, para simbolizar el poder.</p>
+                        <h5>LEYENDA DEL SONDOR RAYMI</h5>
+                        <p>De esta laguna, cuenta la leyenda, emergió Usko Willca, el primer chanka, quien como una deidad, apareciera con la misión de unificar a los pueblos locales que, en la época, vivían en constantes enfrentamientos. Asimismo Usko Willca,
+                            como deidad, hizo, que a partir de piedras que lanzara a su alrededor, surgieran los hombres de su etnia.</p>
+                        <p>La voz de unión y ataque a los incas corre a cargo del líder Anku Ayllu, quien convoca a los pueblos vecinos para defender la etnia chanka de la subordinación ante el enemigo en expansión, concluye en el ingreso de los chankas
+                            a Sóndor, ingreso que simboliza el inicio del enfrentamiento entre chankas e incas en la lucha por la soberanía de los pueblos.</p>
+                        <p>&nbsp;</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="upage vertical-col panel" id="idpagePedro" data-header="af-header-8" data-footer="none">
-                <div class="widget uib_w_41 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <div class="widget uib_w_63 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
-                        <img src="images/iglesia1.jpg">
+                        <img src="images/sondor2.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_42 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <div class="widget uib_w_64 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>FECHAS DE CELEBRACION DEL SONDOR RAYMI</h5>
+                        <p>Se lleva a cabo durante el mes de Junio, en específico entre los días 18 y 19, en la celebración participan cientos de actores y pobladores descendientes de los chankas. La escena se inicia en la Laguna de Pakucha, que en la época
+                            mítica Chanka, cumpliera la función de pacarina, es decir, un lugar sagrado de procedencia de un grupo poblacional y luego se desplazan al sordor rayme a seguir escenificando la historia .</p>
+                    </div>
+                </div>
+
+                <div class="widget uib_w_65 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/sondor3.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_66 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>UBICACION</h5>
+                        <p>Se ubica en el Distrito de Pacucha, Provincia Andahuaylas, Departamento Apurimac a 14.38 kilómetros del centro de la ciudad de Andahuaylas.</p>
+                    </div>
+                </div><a class="button widget uib_w_67 d-margins icon location" data-uib="app_framework/button" data-ver="1">Ver Mapa</a>
+            </div>
+
+            <div class="upage vertical-col panel fondo2" id="idpagePedro" data-header="af-header-8" data-footer="none">
+
+                <div class="widget uib_w_43 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>LA IGLESIA DE SAN PEDRO DE ANDAHUAYLAS</h5>
+                        <p>Esta ubicado en la palza mayor de anadahuaylas debe de haberse construido a finales del siglo XVI, Estuvo bajo la advocación de San Pedro, de alli viene el nombre de la iglesia aunque el altar principal lo preside la Virgen del
+                            Rosario. Consta de una sola nave con capillas laterales y sus anchas paredes son de barro</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_68 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/iglesia2.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_43 d-margins" data-uib="media/text" data-ver="0">
+                <div class="widget uib_w_69 d-margins" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
-                        <p>La iglesia de San Pedro de Andahuaylas esta ubicado en la palza mayor de anadahuaylas debe de haberse construido a finales del siglo XVI, Estuvo bajo la advocación de San Pedro, de alli viene el nombre de la iglesia aunque el altar
-                            principal lo preside la Virgen del Rosario. Consta de una sola nave con capillas laterales y sus anchas paredes son de barro</p>
+                        <p>La Parroquia de San Pedro de Andahuaylas, atiende a un aproximado de 24 mil feligreses, gran parte de la feligresía residen en la parte rural. La razón principal por la que la zona rural es más poblada es por la dedicación a la
+                            actividad agraria</p>
                     </div>
                 </div>
+                <div class="widget uib_w_70 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/iglesia3.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_71 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>La fiesta religiosa más resaltante es la del Niño Jesús de Año Nuevo (1º de enero), esta fiesta acoge a un promedio de 15 mil devotos-feligreses procedentes de distintas jurisdicciones. Por otra parte la fiesta patronal de “San
+                            Pedro” aun intenta recuperar su importancia.</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_72 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/iglesia4.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_73 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>UBICACION</h5>
+                        <p>Esta ubicado exactamente en el centro de la ciudad de Andahuaylas.</p>
+                    </div>
+                </div><a class="button widget uib_w_74 d-margins icon location" data-uib="app_framework/button" data-ver="1">Ver  Mapa</a>
             </div>
-            <div class="upage vertical-col panel" id="idpageBosque" data-header="af-header-9" data-footer="none">
-                <div class="widget uib_w_44 scale-image d-margins" data-uib="media/img" data-ver="0">
+            <div class="upage vertical-col panel fondo2" id="idpageBosque" data-header="af-header-9" data-footer="none">
+
+                <div class="widget uib_w_75 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>BOSQUE DE PIEDRAS </h5>
+                        <p>Son ruinas multicomponentes, se encuentran situados en la hoya del no Chicha, a una altitud de 3,558 m.s.n.m. que constituyen la region arqueológica mas importante. Es paraíso para los historiadores y ecologistas.</p>
+                        <p>Esta zona fue ocupada en el horizonte medio a fines del horizonte tardío. Los restos de unas 200 estructuras, están presentes con predominios circulares, ovales y rectangulares. Están situados en unas colinas terraplenadas y un
+                            canal de regadío, hay estructuras semejantes a chulpas en posiciones prominentes, grandes cantidades de cerámica tardía.</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_76 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/bosque1.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_45 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <div class="widget uib_w_77 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>HISTORIA DEL BOAQUE DE PIEDRAS </h5>
+                        <p>El Horizonte Medio 600 a 1000 anos después de Cristo, entre los siglos VII y XI el imperio Wari se expandió a lo largo del territorio andino, integrando e incorporando en un gran espacio geográfico a disimiles culturas regionales.
+                            Tras la caída y desintegración de la sociedad, dando origen al surgimiento de reinos locales y regionales el intermedio tardío: la desintegración de la Cultura Wari. Los visitantes que llegan a sus lares, notan inmediatamente
+                            la intrincada andenería que presenta: sus cuevas aledañas que contienen momias, huacos y otros restos. En síntesis, la cuenca del no Chicha fue ocupada por grupos humanos desde el pre cerámico hasta el advenimiento del Imperio
+                            Inca, existiendo más de 80 sitios arqueológicos.</p>
+                        <p>En 1943, en la localidad de Chicha Qasa, cerca de Pampachiri, se descubrió de una manera casual, una tumba de enorme importancia arqueológica, que los profanos intervinientes no aquilataron su enorme valor.</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_78 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/bosque3.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_79 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>LAS PIEDRAS </h5>
+                        <p>Estas rocas oscilan entre 6 y 8 metros de altura, a 3,600 m.s.n.m., impresionantes por su formación natural. Presenta formas piramidales, hongos y otros motivos importantes, en algunos casos muy fascinantes y encantadores, aproximadamente
+                            tiene un ámbito de 60 hectáreas</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_80 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/bosque2.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_46 d-margins" data-uib="media/text" data-ver="0">
+                <div class="widget uib_w_81 d-margins" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
-                        <p>&nbsp;</p>
+                        <h5>UBICACION</h5>
+                        <p>Se encuentra en el distrito de Panpachiri , Provincia Andahuaylas, Departamento Apurímac, está ubicado exactamente a una hora por trocha carrozable de Pampachiri.</p>
+                    </div>
+                </div><a class="button widget uib_w_82 d-margins icon location" data-uib="app_framework/button" data-ver="1">Ver Mapa</a>
+            </div>
+            <div class="upage vertical-col left panel fondo2" id="idpageBanos" data-header="af-header-10" data-footer="none">
+
+                <div class="widget uib_w_50 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>BAÑOS TERMALES DE HUALALACHI</h5>
+                        <p>Hualalachi es el nombre de un hermoso lugar en el distrito de Talavera. Allí existe un manante que brota del interior de un cerro, cuyas aguas forman la famosa piscina de Hualalachi.</p>
+                        <p>Cuenta la tradición que cualquier visitante o turista que llega a beber sus aguas, siempre vuelve a estas tierras; o simplemente se queda formando su hogar con personas de la zona</p>
+
                     </div>
                 </div>
-            </div>
-            <div class="upage vertical-col left panel" id="idpageBanos" data-header="af-header-10" data-footer="none">
-                <div class="widget uib_w_48 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <div class="widget uib_w_83 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/bano1.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-
-                <div class="widget uib_w_49 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <div class="widget uib_w_84 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>Es así que hay gran cantidad de puneños, cusqueños, abanquinos. limeños, loretanos, entre otros, que se han quedado a vivir como si hubiesen nacido aquí.</p>
+                        <p>Tanto les encantó la belleza de los paisajes y los lugares turísticos, así como la fertilidad de sus tierras, que se resignaron a no regresar a sus pueblos de origen.</p>
+                        <p>Atribuyen que es por efectos de las bondades del agua de Hualalachi, quien lo prueba no lo deja (es agua medicinal, con gas natural).</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <div class="widget uib_w_85 scale-image d-margins" data-uib="media/img" data-ver="0">
                     <figure class="figure-align">
                         <img src="images/bano2.jpg">
                         <figcaption data-position="bottom"></figcaption>
                     </figure>
                 </div>
-                <div class="widget uib_w_50 d-margins" data-uib="media/text" data-ver="0">
+                <div class="widget uib_w_86 d-margins" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
-                        <p>hualalachi</p>
-                        <p>El encanto de las aguas de hualalachi. Desde un manantial brotan las aguas que conducen a los baños termales de hualalachi ubicado en el pueblo del mismo nombre, en el distrito de talavera en el departamento de Apurímac de la provincia
-                            de Andahuaylas</p>
+                        <p>En la madrugada del Viernes Santo es costumbre ir a la piscina de Hualalachi a bañarse y purificar el cuerpo.</p>
+                        <p>De esta manera, refieren los mayores, se ayuda a Cristo que sufre por nosotros en el camino hacia el calvario.</p>
                         <p>&nbsp;</p>
                     </div>
                 </div>
+                <div class="widget uib_w_87 scale-image d-margins" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/bano3.jpg">
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+                <div class="widget uib_w_88 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <h5>UBICACION</h5>
+                        <p>Se encuentra en el distrito de Talavera, Provincia Andahuaylas, Departamento Apurímac a unos siete kilómetros de Andahuaylas.</p>
+                    </div>
+                </div><a class="button widget uib_w_89 d-margins icon location" data-uib="app_framework/button" data-ver="1">Ver Mapa</a>
+            </div>
+            <div class="upage vertical-col panel" id="idpageMapa" data-header="af-header-11" data-footer="none">
+               <div id="idGoogleMap" style="width:100%;height:380px;"></div>
+                               
             </div>
         </div>
     </body>

@@ -401,3 +401,11 @@ body:not(#afui) .upage-outer {
     color: #800080;
   }
 }
+@media all {
+  #afui .fondo2 {
+    background-image: url("../images/playa.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
